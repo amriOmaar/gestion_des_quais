@@ -27,22 +27,22 @@ jobs:
 
       # backend install & test
       - name: Install backend dependencies
-        working-directory: ./backend
+        working-directory: backend
         run: npm install
 
       - name: Run backend tests
-        working-directory: ./backend
+        working-directory: backend
         run: npm test
 
       # frontend install & build
       - name: Install frontend dependencies
-        working-directory: ./frontend
+        working-directory: frontend
         run: npm install
 
       - name: Build frontend (Next.js)
-        working-directory: ./frontend
+        working-directory: frontend
         run: npm run build
 
       - name: Run frontend tests (si tu as des tests)
-        working-directory: ./frontend
+        working-directory: frontend
         run: npm test
