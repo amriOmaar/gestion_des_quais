@@ -25,24 +25,24 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Backend install & test
-      - name: Install Backend dependencies
-        working-directory: ./Backend
+      # backend install & test
+      - name: Install backend dependencies
+        working-directory: ./backend
         run: npm install
 
-      - name: Run Backend tests
-        working-directory: ./Backend
+      - name: Run backend tests
+        working-directory: ./backend
         run: npm test
 
-      # Frontend install & build
-      - name: Install Frontend dependencies
-        working-directory: ./Frontend
+      # frontend install & build
+      - name: Install frontend dependencies
+        working-directory: ./frontend
         run: npm install
 
-      - name: Build Frontend (Next.js)
-        working-directory: ./Frontend
+      - name: Build frontend (Next.js)
+        working-directory: ./frontend
         run: npm run build
 
-      - name: Run Frontend tests (si tu as des tests)
-        working-directory: ./Frontend
+      - name: Run frontend tests (si tu as des tests)
+        working-directory: ./frontend
         run: npm test
