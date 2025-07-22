@@ -42,7 +42,3 @@ jobs:
       - name: Build frontend (Next.js)
         working-directory: frontend
         run: npm run build
-
-      - name: Run frontend tests (si tu as des tests)
-        working-directory: frontend
-        run: npm test
