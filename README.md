@@ -9,7 +9,12 @@
 [![License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT SHIELD BADGES -->
+![GitHub](https://img.shields.io/github/license/amriOmaar/CONTYFIND?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/amriOmaar/CONTYFIND?style=flat-square)
+![Made with Node.js](https://img.shields.io/badge/Backend-Node.js-green?style=flat-square)
+![Frontend](https://img.shields.io/badge/Frontend-Next.js-blue?style=flat-square)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen?style=flat-square)
 
 <br />
 <div align="center">
@@ -39,14 +44,6 @@
     <li><a href="#acknowledgments">Remerciements</a></li>
   </ol>
 </details>
-
-<!-- PROJECT SHIELD BADGES -->
-![GitHub](https://img.shields.io/github/license/amriOmaar/CONTYFIND?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/amriOmaar/CONTYFIND?style=flat-square)
-![Made with Node.js](https://img.shields.io/badge/Backend-Node.js-green?style=flat-square)
-![Frontend](https://img.shields.io/badge/Frontend-Next.js-blue?style=flat-square)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen?style=flat-square)
-
 ## About The Project
 
 CONTYFIND est une application MERN (MongoDB, Express, React/Next.js, Node.js) destinée à faciliter la gestion portuaire. Elle permet :
