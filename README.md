@@ -112,7 +112,7 @@ cd ../frontend && npm run dev
 
 ## License
 
-Distribué sous licence MIT. Voir `LICENSE.txt` pour plus d'infos.
+Distribué sous licence MIT. Voir `LICENSE.txt` pour plus d'infos (Prochainement).
 
 ## Contact
 
