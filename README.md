@@ -48,8 +48,6 @@ CONTYFIND est une application MERN (MongoDB, Express, React/Next.js, Node.js) de
 * Gestion des bateaux, utilisateurs (marins/employés) et marchandises
 * Authentification sécurisée JWT
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 * [![Node.js][Node.js]][Node-url]
@@ -57,8 +55,6 @@ CONTYFIND est une application MERN (MongoDB, Express, React/Next.js, Node.js) de
 * [![MongoDB][MongoDB]][MongoDB-url]
 * [![Next.js][Next.js]][Next-url]
 * [![Tailwind CSS][TailwindCSS]][Tailwind-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 
