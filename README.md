@@ -8,7 +8,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT SHIELD BADGES -->
-![GitHub](https://img.shields.io/github/license/amriOmaar/CONTYFIND?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/amriOmaar/CONTYFIND?style=flat-square)
 ![Made with Node.js](https://img.shields.io/badge/Backend-Node.js-green?style=flat-square)
 ![Frontend](https://img.shields.io/badge/Frontend-Next.js-blue?style=flat-square)
