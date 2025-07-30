@@ -41,7 +41,7 @@
     <li><a href="#acknowledgments">Remerciements</a></li>
   </ol>
 </details>
-## About The Project
+# About The Project
 
 CONTYFIND est une application MERN (MongoDB, Express, React/Next.js, Node.js) destinée à faciliter la gestion portuaire. Elle permet :
 
