@@ -13,11 +13,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/amriOmaar/CONTYFIND">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">🚢 CONTYFIND</h3>
+  <h3 align="center">🚢 Gestion des quais </h3>
 
   <p align="center">
     Application de gestion portuaire complète — réservation de quais, gestion des bateaux, marchandises et utilisateurs.
@@ -39,7 +35,6 @@
     <li><a href="#getting-started">Installation</a></li>
     <li><a href="#usage">Utilisation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">Licence</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Remerciements</a></li>
   </ol>
