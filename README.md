@@ -2,7 +2,6 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELD BADGES -->
-![GitHub](https://img.shields.io/github/license/amriOmaar/CONTYFIND?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/amriOmaar/CONTYFIND?style=flat-square)
 ![Made with Node.js](https://img.shields.io/badge/Backend-Node.js-green?style=flat-square)
 ![Frontend](https://img.shields.io/badge/Frontend-Next.js-blue?style=flat-square)
@@ -11,9 +10,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h3 align="center">🚢 CONTYFIND</h3>
+  <h3 align="center">🚢 Gestion des quais </h3>
   <p align="center">
-    Application de gestion portuaire complète — réservation de quais, gestion des bateaux, marchandises et utilisateurs.
+    Application de gestion complète — réservation de quais, gestion des bateaux, marchandises et utilisateurs.
     <br />
     <a href="https://github.com/amriOmaar/CONTYFIND"><strong>Explorer le code »</strong></a>
     <br />
@@ -26,7 +25,7 @@
 
 ## 🛠️ À propos du projet
 
-**CONTYFIND** est une application web destinée à la gestion des activités portuaires :
+C'est une application web destinée à la gestion des activités portuaires :
 
 - Réservation interactive de places de port (avec affichage graphique)
 - Gestion des bateaux, des marchandises et des utilisateurs (employés/marins)
