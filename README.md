@@ -96,7 +96,7 @@ Ce projet est construit avec les technologies suivantes :
 
 1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/amriOmaar/CONTYFIND.git
+   git clone https://github.com/amriOmaar/gestion_des_quais
 
 2. Installer les dépendances :
    ```bash
