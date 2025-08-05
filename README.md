@@ -26,7 +26,7 @@
 
 <br />
 <div align="center">
-  <h2>🚢 Gestion des Quais – CONTYFIND</h2>
+  <h2>🚢 Gestion des Quais</h2>
   <p>
     Application MERN pour la gestion portuaire : réservation de quais, suivi des bateaux et gestion des utilisateurs.
     <br />
