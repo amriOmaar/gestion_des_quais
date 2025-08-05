@@ -24,7 +24,7 @@ export default function AddBateauForm() {
     fetch("http://localhost:5000/users/getAllUsers")
       .then((res) => res.json())
       .then((data) => {
-        const filteredMarins = data.filter((u) => u.poste === "marin");
+        const filteredMarins = data.filter((u: any) => u.poste === "marin");
         setMarins(filteredMarins);
       })
       .catch((err) => console.error("Erreur chargement marins:", err));

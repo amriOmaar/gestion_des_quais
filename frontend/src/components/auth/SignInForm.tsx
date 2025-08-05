@@ -32,7 +32,7 @@ export default function SignInForm() {
       }
 
       localStorage.setItem("token", data.token);
-      router.push("/");
+      router.push("/dashboard");
 
     } catch (err: any) {
       console.error("Erreur de connexion :", err);
@@ -95,12 +95,12 @@ export default function SignInForm() {
 
     {error && <p className="text-red-500 text-base text-center">{error}</p>}
 
-    <Button
+    <button
       type="submit"
       className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 text-lg"
     >
       Se connecter
-    </Button>
+    </button>
 
   </form>
 </div>
