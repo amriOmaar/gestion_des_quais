@@ -106,7 +106,7 @@ Ce projet est construit avec les technologies suivantes :
 4. Ajouter un fichier .env dans backend :
    ```bash
    PORT=5000
-   MONGO_URI=mongodb://localhost:27017/contyfind
+   MONGO_URI=mongodb://localhost:27017/stage_esprit_2025
    JWT_SECRET=tonSecretJWT
 
 6. Lancer les serveurs :
@@ -125,17 +125,15 @@ Ce projet est construit avec les technologies suivantes :
 - ✅ Authentification JWT
 - ✅ Réservation dynamique et visuelle des quais
 - ✅ UI responsive avec Tailwind
-- ⏳ Dashboard administrateur
 - ⏳ Statistiques & visualisation de données
 
 ## 📩 Contact
 
 **Amri Omar**  
-📧 [amriomar.dev@gmail.com](mailto:amriomar.dev@gmail.com)  
-🔗 [LinkedIn – amriomar](https://linkedin.com/in/amriomar)  
-💻 Projet GitHub : [github.com/amriOmaar/CONTYFIND](https://github.com/amriOmaar/CONTYFIND)
+📧 [E-mail](mailto:amri.omar93@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/amriomar)  
+💻 Projet GitHub : [github.com/amriOmaar/CONTYFIND](https://github.com/amriOmaar/gestion_des_quais)
 
 ## 🙌 Remerciements
-
 - [Shields.io](https://shields.io)
 - [Font Awesome](https://fontawesome.com)
