@@ -132,7 +132,7 @@ Ce projet est construit avec les technologies suivantes :
 **Amri Omar**  
 📧 [E-mail](mailto:amri.omar93@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/amriomar)  
-💻 Projet GitHub : [github.com/amriOmaar/CONTYFIND](https://github.com/amriOmaar/gestion_des_quais)
+💻 Projet GitHub : [gestion_des_quais](https://github.com/amriOmaar/gestion_des_quais)
 
 ## 🙌 Remerciements
 - [Shields.io](https://shields.io)
