@@ -1,7 +1,13 @@
-<a name="top"></a>
+<a id="readme-top"></a>
 
-<!-- SHIELDS -->
+<!-- PROJECT SHIELDS -->
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT SHIELD BADGES -->
 <p align="center">
   <a href="https://github.com/amriOmaar/CONTYFIND/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/amriOmaar/CONTYFIND?style=for-the-badge" alt="Contributors" />
@@ -25,101 +31,132 @@
 </p>
 
 <br />
-<div align="center">
-  <h2>🚢 Gestion des Quais – CONTYFIND</h2>
-  <p>
-    Application MERN pour la gestion portuaire : réservation de quais, suivi des bateaux et gestion des utilisateurs.
-    <br />
-    <a href="https://github.com/amriOmaar/CONTYFIND"><strong>Découvrir le code »</strong></a>
-    <br /><br />
-    🌐 Démo disponible bientôt
-  </p>
-</div>
 
----
+<!-- TABLE OF CONTENTS -->
 
-## 📚 Sommaire
+<details>
+  <summary>Table des Matières</summary>
+  <ol>
+    <li><a href="#about-the-project">À propos du projet</a></li>
+    <li><a href="#built-with">Technologies</a></li>
+    <li><a href="#getting-started">Installation</a></li>
+    <li><a href="#usage">Utilisation</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Remerciements</a></li>
+  </ol>
+</details>
+# About The Project
 
-- [À propos](#about)
-- [Technologies](#tech)
-- [Installation](#install)
-- [Utilisation](#usage)
-- [Roadmap](#roadmap)
-- [Contact](#contact)
-- [Remerciements](#thanks)
+CONTYFIND est une application MERN (MongoDB, Express, React/Next.js, Node.js) destinée à faciliter la gestion portuaire. Elle permet :
 
----
+* Réservation graphique de places de port (libre/réservée)
+* Gestion des bateaux, utilisateurs (marins/employés) et marchandises
+* Authentification sécurisée JWT
 
-## 🔍 À propos <a name="about"></a>
+### Built With
 
-**CONTYFIND** est une solution complète pour la gestion portuaire, développée avec la stack MERN. Elle permet :
+* [![Node.js][Node.js]][Node-url]
+* [![Express][Express.js]][Express-url]
+* [![MongoDB][MongoDB]][MongoDB-url]
+* [![Next.js][Next.js]][Next-url]
+* [![Tailwind CSS][TailwindCSS]][Tailwind-url]
 
-- 🛳 Réservation graphique et interactive des quais
-- 📋 Gestion des bateaux, marchandises, utilisateurs (employés/marins)
-- 🔐 Authentification sécurisée par JWT
+## Getting Started
 
----
+### Prerequisites
 
-## 🧰 Technologies <a name="tech"></a>
+* Node.js
+* MongoDB
 
-Ce projet est construit avec les technologies suivantes :
+### Installation
 
-- [![Node.js][Node.js]][Node-url]
-- [![Express.js][Express.js]][Express-url]
-- [![MongoDB][MongoDB]][MongoDB-url]
-- [![Next.js][Next.js]][Next-url]
-- [![Tailwind CSS][TailwindCSS]][Tailwind-url]
+1. Cloner le repo
 
----
+sh
+git clone https://github.com/amriOmaar/CONTYFIND.git
 
-## ⚙️ Installation <a name="install"></a>
 
-### Prérequis
+2. Installer les dépendances
 
-- Node.js
-- MongoDB
+sh
+cd backend && npm install
+cd ../frontend && npm install
 
-### Étapes
-
-1. Cloner le dépôt :
-   ```bash
-   git clone https://github.com/amriOmaar/CONTYFIND.git
-
-2. Installer les dépendances :
-   cd backend && npm install
-   cd ../frontend && npm install
 
 3. Ajouter un fichier .env dans backend :
-   PORT=5000
-   MONGO_URI=mongodb://localhost:27017/contyfind
-   JWT_SECRET=tonSecretJWT
 
-4. Lancer les serveurs :
-   cd backend && npm run dev
-   cd ../frontend && npm run dev
+env
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/contyfind
+JWT_SECRET=tonSecretJWT
 
 
-🚀 Utilisation <a name="usage"></a>
-      🔑 Connexion et gestion sécurisée des utilisateurs
-      📍 Réservation visuelle des quais en temps réel
-      ✏️ Gestion complète (CRUD) : bateaux, marchandises, utilisateurs
+4. Lancer les serveurs
 
-📈 Roadmap <a name="roadmap"></a>
-      ✅ Authentification JWT
-      ✅ Réservation dynamique et visuelle des quais
-      ✅ UI responsive avec Tailwind
-      ⏳ Dashboard administrateur
-      ⏳ Statistiques & visualisation de données
+sh
+# Backend
+cd backend && npm run dev
 
-📩 Contact <a name="contact"></a>
-      Amri Omar
-      📧 amriomar.dev@gmail.com
-      🔗 LinkedIn – amriomar
-      Projet GitHub : github.com/amriOmaar/CONTYFIND
+# Frontend
+cd ../frontend && npm run dev
 
-🙌 Remerciements <a name="thanks"></a>
-      Shields.io
-      Font Awesome
 
-      
-Souhaitez-vous également une version téléchargeable (`README.md`) prête à l’emploi ?
+## Usage
+
+* Authentification utilisateur
+* Réservation de quai (interface dynamique)
+* Gestion CRUD : bateaux, marchandises, utilisateurs
+
+## Roadmap
+
+* [x] Authentification JWT
+* [x] Réservation graphique de places
+* [x] Interface utilisateur responsive
+* [ ] Tableau de bord admin
+* [ ] Statistiques graphiques
+
+## License
+
+Distribué sous licence MIT. Voir LICENSE.txt pour plus d'infos (Prochainement).
+
+## Contact
+
+**Amri Omar**
+🔗 [LinkedIn](https://linkedin.com/in/amriomar)
+📫 [amriomar.dev@gmail.com](mailto:amriomar.dev@gmail.com)
+
+Project Link: [https://github.com/amriOmaar/CONTYFIND](https://github.com/amriOmaar/CONTYFIND)
+
+## Acknowledgments
+
+* [Shields.io](https://shields.io)
+* [Best README Template](https://github.com/othneildrew/Best-README-Template)
+* [Font Awesome](https://fontawesome.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS -->
+
+[Node.js]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white
+[Node-url]: https://nodejs.org/
+[Express.js]: https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white
+[Express-url]: https://expressjs.com/
+[MongoDB]: https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white
+[MongoDB-url]: https://www.mongodb.com/
+[Next.js]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white
+[Next-url]: https://nextjs.org/
+[TailwindCSS]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[contributors-shield]: https://img.shields.io/github/contributors/amriOmaar/CONTYFIND.svg?style=for-the-badge
+[contributors-url]: https://github.com/amriOmaar/CONTYFIND/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/amriOmaar/CONTYFIND.svg?style=for-the-badge
+[forks-url]: https://github.com/amriOmaar/CONTYFIND/network/members
+[stars-shield]: https://img.shields.io/github/stars/amriOmaar/CONTYFIND.svg?style=for-the-badge
+[stars-url]: https://github.com/amriOmaar/CONTYFIND/stargazers
+[issues-shield]: https://img.shields.io/github/issues/amriOmaar/CONTYFIND.svg?style=for-the-badge
+[issues-url]: https://github.com/amriOmaar/CONTYFIND/issues
+[license-shield]: https://img.shields.io/github/license/amriOmaar/CONTYFIND.svg?style=for-the-badge
+[license-url]: https://github.com/amriOmaar/CONTYFIND/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0077B5
+[linkedin-url]: https://linkedin.com/in/amriomar
