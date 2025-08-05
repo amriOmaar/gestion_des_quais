@@ -60,15 +60,28 @@
 
 ---
 
-## 🧰 Technologies <a name="tech"></a>
+## 🧰 Technologies
 
 Ce projet est construit avec les technologies suivantes :
 
-- [![Node.js][Node.js]][Node-url]
-- [![Express.js][Express.js]][Express-url]
-- [![MongoDB][MongoDB]][MongoDB-url]
-- [![Next.js][Next.js]][Next-url]
-- [![Tailwind CSS][TailwindCSS]][Tailwind-url]
+<p align="center">
+  <a href="https://nodejs.org/">
+    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  </a>
+  <a href="https://expressjs.com/">
+    <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
+  </a>
+  <a href="https://www.mongodb.com/">
+    <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  </a>
+  <a href="https://nextjs.org/">
+    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+  </a>
+  <a href="https://tailwindcss.com/">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  </a>
+</p>
+
 
 ---
 
