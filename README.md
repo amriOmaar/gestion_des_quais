@@ -114,28 +114,28 @@ Ce projet est construit avec les technologies suivantes :
    cd backend && npm run dev
    cd ../frontend && npm run dev
 
+## 🚀 Utilisation
 
-🚀 Utilisation <a name="usage"></a>
-      🔑 Connexion et gestion sécurisée des utilisateurs
-      📍 Réservation visuelle des quais en temps réel
-      ✏️ Gestion complète (CRUD) : bateaux, marchandises, utilisateurs
+- 🔐 **Connexion sécurisée** via JWT
+- 📍 **Réservation visuelle des quais** en temps réel avec interface graphique
+- ✏️ **Gestion complète (CRUD)** des bateaux, marchandises et utilisateurs
 
-📈 Roadmap <a name="roadmap"></a>
-      ✅ Authentification JWT
-      ✅ Réservation dynamique et visuelle des quais
-      ✅ UI responsive avec Tailwind
-      ⏳ Dashboard administrateur
-      ⏳ Statistiques & visualisation de données
+## 📈 Roadmap
 
-📩 Contact <a name="contact"></a>
-      Amri Omar
-      📧 amriomar.dev@gmail.com
-      🔗 LinkedIn – amriomar
-      Projet GitHub : github.com/amriOmaar/CONTYFIND
+- ✅ Authentification JWT
+- ✅ Réservation dynamique et visuelle des quais
+- ✅ UI responsive avec Tailwind
+- ⏳ Dashboard administrateur
+- ⏳ Statistiques & visualisation de données
 
-🙌 Remerciements <a name="thanks"></a>
-      Shields.io
-      Font Awesome
+## 📩 Contact
 
-      
-Souhaitez-vous également une version téléchargeable (`README.md`) prête à l’emploi ?
+**Amri Omar**  
+📧 [amriomar.dev@gmail.com](mailto:amriomar.dev@gmail.com)  
+🔗 [LinkedIn – amriomar](https://linkedin.com/in/amriomar)  
+💻 Projet GitHub : [github.com/amriOmaar/CONTYFIND](https://github.com/amriOmaar/CONTYFIND)
+
+## 🙌 Remerciements
+
+- [Shields.io](https://shields.io)
+- [Font Awesome](https://fontawesome.com)
