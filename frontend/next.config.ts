@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   eslint: {
-    ignoreDuringBuilds: true, // ✅ Ignore les erreurs ESLint pendant le build CI/CD
+    ignoreDuringBuilds: true,
   },
   webpack(config) {
     config.module.rules.push({
