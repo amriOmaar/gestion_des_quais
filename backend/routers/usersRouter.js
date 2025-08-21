@@ -119,5 +119,50 @@ router.put("/profile", async (req, res) => {
 });
 
 
+router.put('/updateUser/:id', async (req, res) => {
+  try {
+    const { password, ...rest } = req.body;
+
+    // Si un nouveau mot de passe est fourni, on le chiffre
+    if (password) {
+      rest.password = await bcrypt.hash(password, 10);
+    }
+
+    const updatedUser = await User.findByIdAndUpdate(
+      req.params.id,
+      rest,
+      { new: true, runValidators: true } // renvoie le user mis à jour et valide les contraintes du schéma
+    );
+
+    if (!updatedUser) {
+      return res.status(404).json({ message: 'Utilisateur non trouvé.' });
+    }
+
+    res.status(200).json({ message: 'Utilisateur modifié avec succès', user: updatedUser });
+
+  } catch (error) {
+    console.error('Erreur lors de la modification de l\'utilisateur :', error);
+    res.status(500).json({ message: 'Erreur interne.' });
+  }
+});
+
+
+router.delete('/deleteUser/:id', async (req, res) => {
+  try {
+    const deletedUser = await User.findByIdAndDelete(req.params.id);
+
+    if (!deletedUser) {
+      return res.status(404).json({ message: 'Utilisateur non trouvé.' });
+    }
+
+    res.status(200).json({ message: 'Utilisateur supprimé avec succès' });
+
+  } catch (error) {
+    console.error('Erreur lors de la suppression de l\'utilisateur :', error);
+    res.status(500).json({ message: 'Erreur interne.' });
+  }
+});
+
+
 
 module.exports = router;

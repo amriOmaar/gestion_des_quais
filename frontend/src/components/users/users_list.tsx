@@ -10,7 +10,8 @@ import {
   TableRow,
 } from "../ui/table";
 import Badge from "../ui/badge/Badge";
-import { PlusCircle } from "lucide-react";
+import { PlusCircle, Pencil, Trash2 } from "lucide-react";
+import ModifyUserPopup from "./modifier_user";
 
 interface Employee {
   _id: string;
@@ -27,15 +28,39 @@ interface Employee {
 export default function UsersList() {
   const router = useRouter();
   const [employees, setEmployees] = useState<Employee[]>([]);
+  const [selectedUser, setSelectedUser] = useState<Employee | null>(null);
 
-  useEffect(() => {
+  const fetchUsers = () => {
     fetch("http://localhost:5000/users/getAllUsers")
       .then((res) => res.json())
       .then((data) => setEmployees(data))
       .catch((err) =>
         console.error("Erreur lors du chargement des employés :", err)
       );
+  };
+
+  useEffect(() => {
+    fetchUsers();
   }, []);
+
+  const handleDelete = async (id: string) => {
+    if (!confirm("Voulez-vous vraiment supprimer cet utilisateur ?")) return;
+
+    try {
+      const res = await fetch(`http://localhost:5000/users/deleteUser/${id}`, {
+        method: "DELETE",
+      });
+
+      if (res.ok) {
+        fetchUsers();
+      } else {
+        const result = await res.json();
+        alert(result.message || "Erreur lors de la suppression.");
+      }
+    } catch {
+      alert("Erreur réseau ou serveur.");
+    }
+  };
 
   return (
     <div className="p-6">
@@ -61,7 +86,7 @@ export default function UsersList() {
       {/* Tableau */}
       <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-white/[0.05] dark:bg-white/[0.03]">
         <div className="max-w-full overflow-x-auto">
-          <div className="min-w-[1000px]">
+          <div className="min-w-[1100px]">
             <Table>
               <TableHeader className="bg-gray-50 dark:bg-white/[0.05]">
                 <TableRow>
@@ -73,6 +98,7 @@ export default function UsersList() {
                     "Entreprise",
                     "Poste",
                     "Rôle",
+                    "",
                   ].map((col) => (
                     <TableCell
                       key={col}
@@ -122,6 +148,22 @@ export default function UsersList() {
                         {emp.role}
                       </Badge>
                     </TableCell>
+
+                    {/* Actions */}
+                    <TableCell className="px-6 py-4 text-center flex gap-3 justify-center">
+                      <button
+                        onClick={() => setSelectedUser(emp)}
+                        className="flex items-center gap-1 px-3 py-1 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition"
+                      >
+                        <Pencil className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={() => handleDelete(emp._id)}
+                        className="flex items-center gap-1 px-3 py-1 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -129,6 +171,15 @@ export default function UsersList() {
           </div>
         </div>
       </div>
+
+      {/* Popup modification */}
+      {selectedUser && (
+        <ModifyUserPopup
+          user={selectedUser}
+          onClose={() => setSelectedUser(null)}
+          onUpdated={fetchUsers}
+        />
+      )}
     </div>
   );
 }
